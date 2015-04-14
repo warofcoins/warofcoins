@@ -1618,7 +1618,7 @@ bool CBlock::ConnectBlock(CTxDB& txdb, CBlockIndex* pindex, bool fJustCheck)
         mapQueuedChanges[hashTx] = CTxIndex(posThisTx, tx.vout.size());
     }
 
-    /*if (IsProofOfWork())
+    if (IsProofOfWork())
     {
         int64_t nReward = GetProofOfWorkReward(nFees, pindex->nHeight);
         // Check coinbase reward
@@ -1627,7 +1627,7 @@ bool CBlock::ConnectBlock(CTxDB& txdb, CBlockIndex* pindex, bool fJustCheck)
                    vtx[0].GetValueOut(),
                    nReward));
     }
-    */
+    
     if (IsProofOfStake())
     {
         // ppcoin: coin stake tx earns reward instead of paying fee
