@@ -30,7 +30,7 @@ static const int DATABASE_VERSION = 70508;
 // network protocol versioning
 //
 
-static const int PROTOCOL_VERSION = 60023;
+static const int PROTOCOL_VERSION = 60024;
 
 // intial proto version, to be increased after version/verack negotiation
 static const int INIT_PROTO_VERSION = 209;
@@ -54,7 +54,7 @@ static const int MEMPOOL_GD_VERSION = 60009;
 
 #define DISPLAY_VERSION_MAJOR       1
 #define DISPLAY_VERSION_MINOR       0
-#define DISPLAY_VERSION_REVISION    1
+#define DISPLAY_VERSION_REVISION    2
 #define DISPLAY_VERSION_BUILD       0
 
 #endif
